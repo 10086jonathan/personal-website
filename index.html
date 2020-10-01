@@ -12,6 +12,9 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -27,12 +30,54 @@
         <h1>hello world</h1>
     </nav>
     <header>
-
+        <h3 class="white-text">Hi there, I'm Jon</h3>
+        <img src="./imgs/jon photo.jpg" alt="Jon Apagueno" class="responsive-image circle">
     </header>
-    <main>
-
+    <main class="container">
+        <div class="row">
+            <section class="col s6">
+                <div class="container">
+                    <h4>About Me</h4>
+                    <p class="body-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sed vitae nihil placeat ipsum? Odio inventore doloribus accusamus. Deleniti magni expedita minima mollitia quaerat obcaecati debitis nemo et qui numquam!
+                    </p>
+                </div>
+            </section>
+            <section class="col s6">
+                <div class="container">
+                    <h4>Keep In Touch</h4>
+                    <form name="contact" method="POST" data-netlify="true">
+                        <div class="input-field">
+                            <input type="text" name="name" id="name">
+                            <label for="name">Name:</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" name="email" id="email">
+                            <label for="Email">Email</label>
+                        </div>
+                        <div class="input-field">
+                           <textarea class="materialize-textarea" name="message" id="message" cols="30" rows="10"></textarea>
+                            <label for="message">Your Message:</label>
+                        </div>
+                        <button type="submit" class="btn btn-small purple">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </div>
     </main>
     <footer class='page-footer purple lighten-2'>
+        <h3>Follow Me</h3>
+        <section>
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+        </section>
         <p class='center-text'>Copyright &copy; <span id='year'></span> All Rights Reseved Jon Apagueno</p>
     </footer>
 </body>
